@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULTRA FITNESS | Peak Performance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">ULTRA<span>FIT</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#membership">Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-in">EVOLVE BEYOND <br><span>YOUR LIMITS</span></h1>
+            <button class="btn-main" onclick="triggerAction('Membership', 'Redirecting to sign-up portal...')">START TRAINING</button>
+        </div>
+    </section>
+
+    <div id="action-center" class="action-center">
+        <div class="indicator"></div>
+        <p id="action-text">Click any feature to explore details.</p>
+    </div>
+
+    <section id="facilities" class="section">
+        <h2 class="title">World-Class Facilities</h2>
+        <div class="container grid">
+            <div class="glass-card" onclick="updateDisplay('Elite Equipment', 'Featuring Hammer Strength and Life Fitness premium machines.')">
+                <div class="icon">🏋️</div>
+                <h3>Iron Zone</h3>
+            </div>
+            <div class="glass-card" onclick="updateDisplay('Recovery Spa', 'Cryotherapy and Infrared Saunas available 24/7.')">
+                <div class="icon">❄️</div>
+                <h3>Recovery Lab</h3>
+            </div>
+            <div class="glass-card" onclick="updateDisplay('Cardio Deck', 'Full floor of high-end treadmills with virtual trails.')">
+                <div class="icon">🏃</div>
+                <h3>Cardio Hub</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section dark">
+        <h2 class="title">Our Services</h2>
+        <div class="container grid">
+            <div class="service-box" onclick="updateDisplay('Personal Training', 'Book a 1-on-1 session with our IFBB Pro trainers.')">
+                <h3>Personal Coaching</h3>
+                <p>Tailored nutrition & workout plans.</p>
+            </div>
+            <div class="service-box" onclick="updateDisplay('Group Classes', 'Yoga, HIIT, and Zumba every morning and evening.')">
+                <h3>Group Classes</h3>
+                <p>Community energy, expert lead.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="membership" class="section">
+        <h2 class="title">Choose Your Path</h2>
+        <div class="container grid">
+            <div class="plan" onclick="triggerAction('Basic Plan', 'Base access granted. $25/mo.')">
+                <h4>BASIC</h4>
+                <p class="price">$25</p>
+                <button>JOIN</button>
+            </div>
+            <div class="plan featured" onclick="triggerAction('Elite Plan', 'All access + Spa included! $55/mo.')">
+                <h4>ELITE</h4>
+                <p class="price">$55</p>
+                <button>JOIN</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
